@@ -1,5 +1,8 @@
 // script.js
 
+// Wait for DOM and deferred scripts to be ready
+document.addEventListener('DOMContentLoaded', function () {
+
 // Initialize AOS (Animate On Scroll)
 AOS.init({
     duration: 1000,
@@ -8,7 +11,7 @@ AOS.init({
 });
 
 // Initialize EmailJS with your public key
-emailjs.init('0WQgKOw0-i0mnj4ya'); // Replace with your actual public key from EmailJS dashboard
+emailjs.init('0WQgKOw0-i0mnj4ya');
 
 // Get form elements
 const contactForm = document.getElementById('contact-form');
@@ -31,8 +34,11 @@ function toggleMobileNav() {
     navToggle.classList.toggle('active');
     navMenu.classList.toggle('show');
 
+    const isOpen = navMenu.classList.contains('show');
+    navToggle.setAttribute('aria-expanded', isOpen);
+
     // Prevent body scroll when menu is open
-    if (navMenu.classList.contains('show')) {
+    if (isOpen) {
         document.body.style.overflow = 'hidden';
     } else {
         document.body.style.overflow = 'auto';
@@ -149,8 +155,7 @@ function animateSkillBars() {
     });
 }
 
-// Initialize skill bar animation
-document.addEventListener('DOMContentLoaded', animateSkillBars);
+// Initialize skill bar animation (called from main init)
 
 // ========================================
 // SMOOTH SCROLLING FOR NAVIGATION LINKS
@@ -331,19 +336,19 @@ function manageFocus() {
 // INITIALIZE ALL FUNCTIONS
 // ========================================
 
-// Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function () {
-    console.log('Portfolio loaded successfully!');
+console.log('Portfolio loaded successfully!');
 
-    // Initialize all functionality
-    initScrollAnimations();
-    manageFocus();
+// Initialize all functionality
+initScrollAnimations();
+manageFocus();
+animateSkillBars();
 
-    // Add loading class removal after page load
-    setTimeout(() => {
-        document.body.classList.add('loaded');
-    }, 500);
-});
+// Add loading class removal after page load
+setTimeout(() => {
+    document.body.classList.add('loaded');
+}, 500);
+
+}); // End of DOMContentLoaded wrapper
 
 // Handle page visibility changes for performance
 document.addEventListener('visibilitychange', function () {

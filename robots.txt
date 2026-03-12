@@ -1,0 +1,6 @@
+# robots.txt for https://lakindu1234.github.io/
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://lakindu1234.github.io/sitemap.xml
