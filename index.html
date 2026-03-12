@@ -3,10 +3,84 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Portfolio|Lakidu</title>
+        <title>Lakidu Minosha | AI & ML Enthusiast | Full Stack Developer Portfolio</title>
+
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="Portfolio of Lakidu Minosha — AI &amp; Machine Learning Enthusiast and Full Stack Developer. Explore projects in Python, Flask, LangChain, RAG systems, and more. BSc (Hons) Computer Science at University of Westminster." />
+        <meta name="keywords" content="Lakidu Minosha, portfolio, AI developer, machine learning, full stack developer, Python, Java, JavaScript, Flask, LangChain, RAG, computer science, software engineer, web developer" />
+        <meta name="author" content="Lakidu Minosha" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://lakindu1234.github.io/" />
+        <meta name="theme-color" content="#050508" />
+
+        <!-- Open Graph / Facebook / LinkedIn -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://lakindu1234.github.io/" />
+        <meta property="og:title" content="Lakidu Minosha | AI & ML Enthusiast | Full Stack Developer" />
+        <meta property="og:description" content="Explore the portfolio of Lakidu Minosha — AI &amp; Machine Learning projects, full stack web apps, and award-winning innovations. BSc Computer Science at University of Westminster." />
+        <meta property="og:image" content="https://lakindu1234.github.io/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Lakidu Minosha Portfolio" />
+        <meta property="og:locale" content="en_US" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://lakindu1234.github.io/" />
+        <meta name="twitter:title" content="Lakidu Minosha | AI & ML Enthusiast | Full Stack Developer" />
+        <meta name="twitter:description" content="Explore the portfolio of Lakidu Minosha — AI &amp; Machine Learning projects, full stack web apps, and award-winning innovations." />
+        <meta name="twitter:image" content="https://lakindu1234.github.io/og-image.png" />
+
+        <!-- JSON-LD Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebSite",
+                    "@id": "https://lakindu1234.github.io/#website",
+                    "url": "https://lakindu1234.github.io/",
+                    "name": "Lakidu Minosha Portfolio",
+                    "description": "Portfolio of Lakidu Minosha — AI & ML Enthusiast and Full Stack Developer",
+                    "inLanguage": "en"
+                },
+                {
+                    "@type": "Person",
+                    "@id": "https://lakindu1234.github.io/#person",
+                    "name": "Lakidu Minosha",
+                    "url": "https://lakindu1234.github.io/",
+                    "jobTitle": "AI & ML Enthusiast / Full Stack Developer",
+                    "description": "BSc (Hons) Computer Science student at University of Westminster, specializing in AI, Machine Learning, and Full Stack Development.",
+                    "knowsAbout": ["Python", "Java", "JavaScript", "Dart", "Flask", "Node.js", "Flutter", "Machine Learning", "AI", "LangChain", "RAG", "Pandas", "NumPy"],
+                    "alumniOf": {
+                        "@type": "CollegeOrUniversity",
+                        "name": "University of Westminster"
+                    },
+                    "sameAs": [
+                        "https://www.linkedin.com/in/lakidu-minosha-senarathne-a3041a222",
+                        "https://github.com/lakindu1234"
+                    ]
+                },
+                {
+                    "@type": "CollectionPage",
+                    "@id": "https://lakindu1234.github.io/#portfolio",
+                    "name": "Projects Portfolio",
+                    "description": "Collection of AI, Machine Learning, and Full Stack development projects by Lakidu Minosha",
+                    "isPartOf": { "@id": "https://lakindu1234.github.io/#website" },
+                    "about": { "@id": "https://lakindu1234.github.io/#person" }
+                }
+            ]
+        }
+        </script>
+
+        <!-- Preconnect to external origins for performance -->
+        <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin />
+        <link rel="preconnect" href="https://unpkg.com" crossorigin />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 
         <!-- Tailwind CDN -->
-        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.tailwindcss.com" defer></script>
 
         <!-- AOS CSS -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -19,62 +93,59 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="style.css" />
-
-        <style>
-            html {
-                scroll-behavior: smooth;
-            }
-        </style>
     </head>
 
     <body class="bg-[#010124] text-white font-sans overflow-x-hidden">
         <!-- Animated Background Particles -->
-        <div class="particles-bg"></div>
+        <div class="particles-bg" aria-hidden="true"></div>
 
-        <!-- Replace your existing header section with this updated version -->
+        <!-- Site Header & Navigation -->
         <header
             class="bg-black/90 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-indigo-800/30"
+            role="banner"
         >
             <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-                <h1 class="text-2xl font-bold gradient-text">Lakidu Portfolio</h1>
+                <a href="#about" class="text-2xl font-bold gradient-text" aria-label="Lakidu Portfolio - go to top">
+                    Lakidu Portfolio
+                </a>
 
                 <!-- Mobile Navigation Toggle Button -->
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
 
-                <nav>
-                    <ul class="flex space-x-6 text-sm font-medium" id="navMenu">
-                        <li>
-                            <a href="#about" class="nav-link">
-                                <i class="fas fa-user mr-2"></i>About
+                <nav role="navigation" aria-label="Main navigation">
+                    <ul class="flex space-x-6 text-sm font-medium" id="navMenu" role="menubar">
+                        <li role="none">
+                            <a href="#about" class="nav-link" role="menuitem">
+                                <i class="fas fa-user mr-2" aria-hidden="true"></i>About
                             </a>
                         </li>
-                        <li>
-                            <a href="#education" class="nav-link">
-                                <i class="fas fa-graduation-cap mr-2"></i>Education
+                        <li role="none">
+                            <a href="#education" class="nav-link" role="menuitem">
+                                <i class="fas fa-graduation-cap mr-2" aria-hidden="true"></i>Education
                             </a>
                         </li>
-                        <li>
-                            <a href="#skills" class="nav-link">
-                                <i class="fas fa-code mr-2"></i>Skills
+                        <li role="none">
+                            <a href="#skills" class="nav-link" role="menuitem">
+                                <i class="fas fa-code mr-2" aria-hidden="true"></i>Skills
                             </a>
                         </li>
-                        <li>
-                            <a href="#achievements" class="nav-link">
-                                <i class="fas fa-trophy mr-2"></i>Achievements & Certificates
+                        <li role="none">
+                            <a href="#achievements" class="nav-link" role="menuitem">
+                                <i class="fas fa-trophy mr-2" aria-hidden="true"></i>Achievements
                             </a>
                         </li>
-                        <li>
-                            <a href="#projects" class="nav-link">
-                                <i class="fas fa-project-diagram mr-2"></i>Projects
+                        <li role="none">
+                            <a href="#projects" class="nav-link" role="menuitem">
+                                <i class="fas fa-project-diagram mr-2" aria-hidden="true"></i>Projects
                             </a>
                         </li>
-                        <li>
-                            <a href="#contact" class="nav-link">
-                                <i class="fas fa-envelope mr-2"></i>Contact
+                        <li role="none">
+                            <a href="#contact" class="nav-link" role="menuitem">
+                                <i class="fas fa-envelope mr-2" aria-hidden="true"></i>Contact
                             </a>
                         </li>
                     </ul>
@@ -85,14 +156,14 @@
         <!-- Main Content -->
         <main class="py-16">
             <!-- About Section -->
-            <section id="about" class="max-w-6xl mx-auto px-6 mb-16" data-aos="fade-up">
+            <section id="about" class="max-w-6xl mx-auto px-6 mb-16" data-aos="fade-up" aria-label="About Lakidu Minosha">
                 <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
                     <!-- Text Left -->
                     <div class="md:w-1/2">
                         <div class="glass-card p-8 rounded-xl shadow-lg text-left">
-                            <h2 class="text-4xl font-bold mb-3 gradient-text">
+                            <h1 class="text-4xl font-bold mb-3 gradient-text">
                                 Hi, I'm Lakidu Minosha
-                            </h2>
+                            </h1>
                             <p class="text-indigo-300 mb-4 text-xl font-medium">
                                 <i class="fas fa-laptop-code mr-2"></i>AI & ML Enthusiast / Full
                                 Stack
@@ -188,7 +259,7 @@
             </div>
 
             <!-- Education Section -->
-            <section id="education" class="max-w-6xl mx-auto px-6 mb-16">
+            <section id="education" class="max-w-6xl mx-auto px-6 mb-16" aria-label="Education and Experience">
                 <h2
                     class="text-4xl font-bold text-center w-full mb-12 gradient-text"
                     data-aos="fade-up"
@@ -272,7 +343,7 @@
                 </div>
             </section>
             <!-- Skills Section -->
-            <section id="skills" class="max-w-6xl mx-auto px-6 mb-16" data-aos="fade-up">
+            <section id="skills" class="max-w-6xl mx-auto px-6 mb-16" data-aos="fade-up" aria-label="Technical Skills">
                 <h2 class="text-4xl font-bold text-center mb-10 gradient-text">
                     <i class="fas fa-code mr-3"></i>My Skills
                 </h2>
@@ -455,7 +526,7 @@
                 </div>
             </section>
 
-            <section id="tools" class="max-w-6xl mx-auto px-6 mb-16" data-aos="fade-up">
+            <section id="tools" class="max-w-6xl mx-auto px-6 mb-16" data-aos="fade-up" aria-label="Development Tools">
                 <h2 class="text-3xl font-bold text-center mb-10 gradient-text">
                     <i class="fas fa-tools mr-3"></i>Development Tools
                 </h2>
@@ -546,7 +617,7 @@
             </div>
 
             <!-- Place this below the Development Tools section -->
-            <section id="achievements" class="max-w-6xl mx-auto px-6 mb-16" data-aos="fade-up">
+            <section id="achievements" class="max-w-6xl mx-auto px-6 mb-16" data-aos="fade-up" aria-label="Achievements and Certificates">
                 <h2 class="text-3xl font-bold text-center mb-10 gradient-text">
                     <i class="fas fa-award mr-3"></i>Achievements & Certificates
                 </h2>
@@ -680,7 +751,7 @@
 
             <!-- Projects Section -->
 
-            <section id="projects" class="max-w-6xl mx-auto px-6 mb-16" data-aos="fade-up">
+            <section id="projects" class="max-w-6xl mx-auto px-6 mb-16" data-aos="fade-up" aria-label="Projects Portfolio">
                 <h2 class="text-4xl font-bold text-center mb-10 gradient-text">
                     <i class="fas fa-project-diagram mr-3"></i> Projects
                 </h2>
@@ -1071,7 +1142,7 @@
             </div>
 
             <!-- Contact Section -->
-            <section id="contact" class="max-w-6xl mx-auto px-6 mb-16" data-aos="zoom-in">
+            <section id="contact" class="max-w-6xl mx-auto px-6 mb-16" data-aos="zoom-in" aria-label="Contact Information">
                 <h2 class="text-4xl font-bold text-center mb-10 gradient-text">
                     <i class="fas fa-envelope mr-3"></i>Get In Touch
                 </h2>
