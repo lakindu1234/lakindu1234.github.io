@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Lakidu Minosha portfolio preview</title>
+  <desc id="desc">Social sharing image for the Lakidu Minosha portfolio website.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="55%" stop-color="#0b1b5e" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#2dd4bf" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1030" cy="110" r="170" fill="#38bdf8" opacity="0.16" />
+  <circle cx="140" cy="520" r="210" fill="#2dd4bf" opacity="0.12" />
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#020617" opacity="0.38" stroke="#67e8f9" stroke-opacity="0.28" />
+  <rect x="104" y="116" width="186" height="12" rx="6" fill="url(#accent)" />
+
+  <text x="104" y="220" fill="#f8fafc" font-family="Segoe UI, Arial, sans-serif" font-size="68" font-weight="700">
+    Lakidu Minosha
+  </text>
+  <text x="104" y="290" fill="#a5f3fc" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="600">
+    AI &amp; ML Enthusiast • Full Stack Developer
+  </text>
+  <text x="104" y="366" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="28">
+    Portfolio featuring AI, Flask, LangChain, RAG, and full stack projects.
+  </text>
+  <text x="104" y="410" fill="#cbd5e1" font-family="Segoe UI, Arial, sans-serif" font-size="28">
+    University of Westminster • Python • JavaScript • Machine Learning
+  </text>
+
+  <rect x="104" y="458" width="292" height="56" rx="28" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.5" />
+  <text x="140" y="495" fill="#e0f2fe" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="600">
+    lakindu1234.github.io
+  </text>
+</svg>
