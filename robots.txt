@@ -1,6 +1,39 @@
 # robots.txt for https://lakindu1234.github.io/
+# Allow all crawlers to access the site
 User-agent: *
 Allow: /
+Allow: *.css$
+Allow: *.js$
+Allow: *.svg$
+Allow: *.jpg$
+Allow: *.jpeg$
+Allow: *.png$
+Allow: *.gif$
+Allow: *.webp$
+
+# Disallow crawling of unnecessary files
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.map$
+Disallow: /*?*utm_*
+Disallow: /*?*fbclid*
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Crawl delay
+# Request crawl delay of 1 second
+Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://lakindu1234.github.io/sitemap.xml
+Sitemap: https://lakindu1234.github.io/sitemap-projects.xml
